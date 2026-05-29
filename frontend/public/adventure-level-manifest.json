@@ -1,0 +1,4489 @@
+{
+  "version": 3,
+  "generatedAt": "2026-05-28T13:01:48.958Z",
+  "boardId": "adventure_l10",
+  "simulationVersion": 1,
+  "logicFps": 60,
+  "levels": [
+    {
+      "boardKind": "campaign",
+      "levelId": "L1",
+      "version": 1,
+      "order": 1,
+      "contentHash": "0xf5cfc520eed61fb19b5de63ab0eaac12f2e266c51408ab3f51a2af0f9a439f25",
+      "challengeSeed": "0x34b657fc0d198deb25dd8bc896cfb53ff467f4243b0e05b6bc0720c58fd63ba7",
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 3660,
+      "goal": 600,
+      "canonical": {
+        "constants": {
+          "defaultStrengthMultiplier": 1,
+          "hookCollisionOffset": 13,
+          "hookCollisionRadius": 6,
+          "hookEmptyReturnSpeed": 180,
+          "hookGrabSpeed": 100,
+          "hookMaxAngle": 75,
+          "hookMaxLength": 230,
+          "hookMinAngle": -75,
+          "hookOrigin": {
+            "x": 158,
+            "y": 30
+          },
+          "hookResolveDurationSec": 1,
+          "hookRotateSpeed": 65,
+          "maxDynamiteCount": 12,
+          "maxStrengthMultiplier": 6,
+          "movingEntityIdleDurationSec": 1,
+          "movingEntityPixelsPerSecond": 60,
+          "movingEntityTurnThreshold": 1,
+          "questionBagExtraDynamiteChance": 0.2
+        },
+        "entityConfigs": {
+          "BigGold": {
+            "baseBonus": 500,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15.25,
+            "displaySize": {
+              "height": 29,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigGold",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "BigRock": {
+            "baseBonus": 100,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15,
+            "displaySize": {
+              "height": 28,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigRock",
+            "mass": 10,
+            "moving": null,
+            "randomBag": null
+          },
+          "Bone": {
+            "baseBonus": 7,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.25,
+            "displaySize": {
+              "height": 13,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Bone",
+            "mass": 3,
+            "moving": null,
+            "randomBag": null
+          },
+          "Diamond": {
+            "baseBonus": 600,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Diamond",
+            "mass": 1.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniGold": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 4.5,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniGold",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniRock": {
+            "baseBonus": 11,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6.5,
+            "displaySize": {
+              "height": 11,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniRock",
+            "mass": 5.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "Mole": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "Mole",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "MoleWithDiamond": {
+            "baseBonus": 602,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "MoleWithDiamond",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "NormalGold": {
+            "baseBonus": 100,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 7,
+            "displaySize": {
+              "height": 13,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGold",
+            "mass": 3.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalGoldPlus": {
+            "baseBonus": 250,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 9.5,
+            "displaySize": {
+              "height": 18,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGoldPlus",
+            "mass": 5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalRock": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.25,
+            "displaySize": {
+              "height": 19,
+              "width": 22
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalRock",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "QuestionBag": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.75,
+            "displaySize": {
+              "height": 23,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "random-bag",
+            "id": "QuestionBag",
+            "mass": 1,
+            "moving": null,
+            "randomBag": {
+              "bonusBase": 50,
+              "bonusRatioMax": 16,
+              "bonusRatioMin": 1,
+              "extraEffectChance": 0.2,
+              "massMax": 9,
+              "massMin": 1
+            }
+          },
+          "Skull": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.75,
+            "displaySize": {
+              "height": 17,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Skull",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "TNT": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 14.75,
+            "displaySize": {
+              "height": 33,
+              "width": 26
+            },
+            "explosive": {
+              "explosionRadius": 50
+            },
+            "family": "explosive",
+            "id": "TNT",
+            "mass": 1,
+            "moving": null,
+            "randomBag": null
+          }
+        },
+        "goal": 600,
+        "levelDefinition": {
+          "entities": [
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 54,
+              "y": 72
+            },
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 239,
+              "y": 73
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 198,
+              "y": 149
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 139,
+              "y": 201
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 239,
+              "y": 92
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 213,
+              "y": 103
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 70,
+              "y": 106
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 96,
+              "y": 140
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 180,
+              "y": 107
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 294,
+              "y": 191
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 45,
+              "y": 219
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 42,
+              "y": 140
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 165,
+              "y": 172
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 28,
+              "y": 75
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 227,
+              "y": 106
+            }
+          ],
+          "group": 1,
+          "id": "L1",
+          "theme": "LevelB"
+        },
+        "logicFps": 60,
+        "simulationVersion": 1,
+        "timeLimitTicks": 3660
+      },
+      "enabled": true
+    },
+    {
+      "boardKind": "campaign",
+      "levelId": "L2",
+      "version": 1,
+      "order": 2,
+      "contentHash": "0x8cba8abc63f9c849022354f60d11359036800c36b87f0b95fa935048127b2844",
+      "challengeSeed": "0x4978f20adf7f3d009c3ca299d5bed2b5054513b5e3d91e02f953fb3b9f8479ab",
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 3660,
+      "goal": 950,
+      "canonical": {
+        "constants": {
+          "defaultStrengthMultiplier": 1,
+          "hookCollisionOffset": 13,
+          "hookCollisionRadius": 6,
+          "hookEmptyReturnSpeed": 180,
+          "hookGrabSpeed": 100,
+          "hookMaxAngle": 75,
+          "hookMaxLength": 230,
+          "hookMinAngle": -75,
+          "hookOrigin": {
+            "x": 158,
+            "y": 30
+          },
+          "hookResolveDurationSec": 1,
+          "hookRotateSpeed": 65,
+          "maxDynamiteCount": 12,
+          "maxStrengthMultiplier": 6,
+          "movingEntityIdleDurationSec": 1,
+          "movingEntityPixelsPerSecond": 60,
+          "movingEntityTurnThreshold": 1,
+          "questionBagExtraDynamiteChance": 0.2
+        },
+        "entityConfigs": {
+          "BigGold": {
+            "baseBonus": 500,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15.25,
+            "displaySize": {
+              "height": 29,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigGold",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "BigRock": {
+            "baseBonus": 100,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15,
+            "displaySize": {
+              "height": 28,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigRock",
+            "mass": 10,
+            "moving": null,
+            "randomBag": null
+          },
+          "Bone": {
+            "baseBonus": 7,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.25,
+            "displaySize": {
+              "height": 13,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Bone",
+            "mass": 3,
+            "moving": null,
+            "randomBag": null
+          },
+          "Diamond": {
+            "baseBonus": 600,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Diamond",
+            "mass": 1.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniGold": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 4.5,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniGold",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniRock": {
+            "baseBonus": 11,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6.5,
+            "displaySize": {
+              "height": 11,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniRock",
+            "mass": 5.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "Mole": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "Mole",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "MoleWithDiamond": {
+            "baseBonus": 602,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "MoleWithDiamond",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "NormalGold": {
+            "baseBonus": 100,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 7,
+            "displaySize": {
+              "height": 13,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGold",
+            "mass": 3.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalGoldPlus": {
+            "baseBonus": 250,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 9.5,
+            "displaySize": {
+              "height": 18,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGoldPlus",
+            "mass": 5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalRock": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.25,
+            "displaySize": {
+              "height": 19,
+              "width": 22
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalRock",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "QuestionBag": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.75,
+            "displaySize": {
+              "height": 23,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "random-bag",
+            "id": "QuestionBag",
+            "mass": 1,
+            "moving": null,
+            "randomBag": {
+              "bonusBase": 50,
+              "bonusRatioMax": 16,
+              "bonusRatioMin": 1,
+              "extraEffectChance": 0.2,
+              "massMax": 9,
+              "massMin": 1
+            }
+          },
+          "Skull": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.75,
+            "displaySize": {
+              "height": 17,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Skull",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "TNT": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 14.75,
+            "displaySize": {
+              "height": 33,
+              "width": 26
+            },
+            "explosive": {
+              "explosionRadius": 50
+            },
+            "family": "explosive",
+            "id": "TNT",
+            "mass": 1,
+            "moving": null,
+            "randomBag": null
+          }
+        },
+        "goal": 950,
+        "levelDefinition": {
+          "entities": [
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 267,
+              "y": 86
+            },
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 230,
+              "y": 128
+            },
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 127,
+              "y": 165
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 37,
+              "y": 104
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 84,
+              "y": 143
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 170,
+              "y": 160
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 243,
+              "y": 206
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 249,
+              "y": 72
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 151,
+              "y": 107
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 275,
+              "y": 124
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 192,
+              "y": 126
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 107,
+              "y": 136
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 61,
+              "y": 166
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 213,
+              "y": 179
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 17,
+              "y": 98
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 278,
+              "y": 197
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 1,
+              "y": 168
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 197,
+              "y": 193
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 97,
+              "y": 190
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 229,
+              "y": 154
+            }
+          ],
+          "group": 2,
+          "id": "L2",
+          "theme": "LevelD"
+        },
+        "logicFps": 60,
+        "simulationVersion": 1,
+        "timeLimitTicks": 3660
+      },
+      "enabled": true
+    },
+    {
+      "boardKind": "campaign",
+      "levelId": "L3",
+      "version": 1,
+      "order": 3,
+      "contentHash": "0xc51ce96d1dc4a9f55d7e329eac4f3e45a4c7ca4f625ed04d96b892d842e9b590",
+      "challengeSeed": "0x57c6106610581763a0a0ac2c70acf74190b5c7bcc0ff9be6c20cc3d47dc4046e",
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 3660,
+      "goal": 1400,
+      "canonical": {
+        "constants": {
+          "defaultStrengthMultiplier": 1,
+          "hookCollisionOffset": 13,
+          "hookCollisionRadius": 6,
+          "hookEmptyReturnSpeed": 180,
+          "hookGrabSpeed": 100,
+          "hookMaxAngle": 75,
+          "hookMaxLength": 230,
+          "hookMinAngle": -75,
+          "hookOrigin": {
+            "x": 158,
+            "y": 30
+          },
+          "hookResolveDurationSec": 1,
+          "hookRotateSpeed": 65,
+          "maxDynamiteCount": 12,
+          "maxStrengthMultiplier": 6,
+          "movingEntityIdleDurationSec": 1,
+          "movingEntityPixelsPerSecond": 60,
+          "movingEntityTurnThreshold": 1,
+          "questionBagExtraDynamiteChance": 0.2
+        },
+        "entityConfigs": {
+          "BigGold": {
+            "baseBonus": 500,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15.25,
+            "displaySize": {
+              "height": 29,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigGold",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "BigRock": {
+            "baseBonus": 100,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15,
+            "displaySize": {
+              "height": 28,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigRock",
+            "mass": 10,
+            "moving": null,
+            "randomBag": null
+          },
+          "Bone": {
+            "baseBonus": 7,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.25,
+            "displaySize": {
+              "height": 13,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Bone",
+            "mass": 3,
+            "moving": null,
+            "randomBag": null
+          },
+          "Diamond": {
+            "baseBonus": 600,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Diamond",
+            "mass": 1.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniGold": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 4.5,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniGold",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniRock": {
+            "baseBonus": 11,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6.5,
+            "displaySize": {
+              "height": 11,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniRock",
+            "mass": 5.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "Mole": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "Mole",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "MoleWithDiamond": {
+            "baseBonus": 602,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "MoleWithDiamond",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "NormalGold": {
+            "baseBonus": 100,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 7,
+            "displaySize": {
+              "height": 13,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGold",
+            "mass": 3.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalGoldPlus": {
+            "baseBonus": 250,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 9.5,
+            "displaySize": {
+              "height": 18,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGoldPlus",
+            "mass": 5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalRock": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.25,
+            "displaySize": {
+              "height": 19,
+              "width": 22
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalRock",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "QuestionBag": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.75,
+            "displaySize": {
+              "height": 23,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "random-bag",
+            "id": "QuestionBag",
+            "mass": 1,
+            "moving": null,
+            "randomBag": {
+              "bonusBase": 50,
+              "bonusRatioMax": 16,
+              "bonusRatioMin": 1,
+              "extraEffectChance": 0.2,
+              "massMax": 9,
+              "massMin": 1
+            }
+          },
+          "Skull": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.75,
+            "displaySize": {
+              "height": 17,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Skull",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "TNT": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 14.75,
+            "displaySize": {
+              "height": 33,
+              "width": 26
+            },
+            "explosive": {
+              "explosionRadius": 50
+            },
+            "family": "explosive",
+            "id": "TNT",
+            "mass": 1,
+            "moving": null,
+            "randomBag": null
+          }
+        },
+        "goal": 1400,
+        "levelDefinition": {
+          "entities": [
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 138,
+              "y": 108
+            },
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 165,
+              "y": 131
+            },
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 227,
+              "y": 175
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 264,
+              "y": 127
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 205,
+              "y": 145
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 264,
+              "y": 157
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 56,
+              "y": 160
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 54,
+              "y": 69
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 74,
+              "y": 70
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 54,
+              "y": 88
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 216,
+              "y": 116
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 288,
+              "y": 117
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 34,
+              "y": 126
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 237,
+              "y": 138
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": -10,
+              "y": 166
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 183,
+              "y": 141
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 250,
+              "y": 177
+            }
+          ],
+          "group": 3,
+          "id": "L3",
+          "theme": "LevelD"
+        },
+        "logicFps": 60,
+        "simulationVersion": 1,
+        "timeLimitTicks": 3660
+      },
+      "enabled": true
+    },
+    {
+      "boardKind": "campaign",
+      "levelId": "L4",
+      "version": 1,
+      "order": 4,
+      "contentHash": "0xd1a7a08c482cb982d57cc4b4bceec18dc3835abc3f36cbbe51e2dc3ea212da7e",
+      "challengeSeed": "0x4a7b788f4148205985329b6ab745940fc6772ce24e8c243af6dbaea8ebfbb365",
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 3660,
+      "goal": 1900,
+      "canonical": {
+        "constants": {
+          "defaultStrengthMultiplier": 1,
+          "hookCollisionOffset": 13,
+          "hookCollisionRadius": 6,
+          "hookEmptyReturnSpeed": 180,
+          "hookGrabSpeed": 100,
+          "hookMaxAngle": 75,
+          "hookMaxLength": 230,
+          "hookMinAngle": -75,
+          "hookOrigin": {
+            "x": 158,
+            "y": 30
+          },
+          "hookResolveDurationSec": 1,
+          "hookRotateSpeed": 65,
+          "maxDynamiteCount": 12,
+          "maxStrengthMultiplier": 6,
+          "movingEntityIdleDurationSec": 1,
+          "movingEntityPixelsPerSecond": 60,
+          "movingEntityTurnThreshold": 1,
+          "questionBagExtraDynamiteChance": 0.2
+        },
+        "entityConfigs": {
+          "BigGold": {
+            "baseBonus": 500,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15.25,
+            "displaySize": {
+              "height": 29,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigGold",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "BigRock": {
+            "baseBonus": 100,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15,
+            "displaySize": {
+              "height": 28,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigRock",
+            "mass": 10,
+            "moving": null,
+            "randomBag": null
+          },
+          "Bone": {
+            "baseBonus": 7,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.25,
+            "displaySize": {
+              "height": 13,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Bone",
+            "mass": 3,
+            "moving": null,
+            "randomBag": null
+          },
+          "Diamond": {
+            "baseBonus": 600,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Diamond",
+            "mass": 1.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniGold": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 4.5,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniGold",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniRock": {
+            "baseBonus": 11,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6.5,
+            "displaySize": {
+              "height": 11,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniRock",
+            "mass": 5.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "Mole": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "Mole",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "MoleWithDiamond": {
+            "baseBonus": 602,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "MoleWithDiamond",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "NormalGold": {
+            "baseBonus": 100,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 7,
+            "displaySize": {
+              "height": 13,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGold",
+            "mass": 3.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalGoldPlus": {
+            "baseBonus": 250,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 9.5,
+            "displaySize": {
+              "height": 18,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGoldPlus",
+            "mass": 5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalRock": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.25,
+            "displaySize": {
+              "height": 19,
+              "width": 22
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalRock",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "QuestionBag": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.75,
+            "displaySize": {
+              "height": 23,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "random-bag",
+            "id": "QuestionBag",
+            "mass": 1,
+            "moving": null,
+            "randomBag": {
+              "bonusBase": 50,
+              "bonusRatioMax": 16,
+              "bonusRatioMin": 1,
+              "extraEffectChance": 0.2,
+              "massMax": 9,
+              "massMin": 1
+            }
+          },
+          "Skull": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.75,
+            "displaySize": {
+              "height": 17,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Skull",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "TNT": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 14.75,
+            "displaySize": {
+              "height": 33,
+              "width": 26
+            },
+            "explosive": {
+              "explosionRadius": 50
+            },
+            "family": "explosive",
+            "id": "TNT",
+            "mass": 1,
+            "moving": null,
+            "randomBag": null
+          }
+        },
+        "goal": 1900,
+        "levelDefinition": {
+          "entities": [
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 189,
+              "y": 146
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 73,
+              "y": 88
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 259,
+              "y": 99
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 56,
+              "y": 197
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 63,
+              "y": 80
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 209,
+              "y": 95
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 217,
+              "y": 104
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 222,
+              "y": 118
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 181,
+              "y": 117
+            },
+            {
+              "dir": null,
+              "type": "NormalGoldPlus",
+              "x": 84,
+              "y": 176
+            },
+            {
+              "dir": null,
+              "type": "NormalGoldPlus",
+              "x": 174,
+              "y": 183
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 240,
+              "y": 110
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 80,
+              "y": 134
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 214,
+              "y": 144
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 138,
+              "y": 182
+            },
+            {
+              "dir": "Right",
+              "type": "Mole",
+              "x": -12,
+              "y": 117
+            },
+            {
+              "dir": "Right",
+              "type": "Mole",
+              "x": 108,
+              "y": 168
+            },
+            {
+              "dir": "Left",
+              "type": "Mole",
+              "x": 328,
+              "y": 158
+            }
+          ],
+          "group": 4,
+          "id": "L4",
+          "theme": "LevelE"
+        },
+        "logicFps": 60,
+        "simulationVersion": 1,
+        "timeLimitTicks": 3660
+      },
+      "enabled": true
+    },
+    {
+      "boardKind": "campaign",
+      "levelId": "L5",
+      "version": 1,
+      "order": 5,
+      "contentHash": "0xc02b8392ea39d622970cef2cb2de834a28e577e31cfce747a0106e3f8fafea85",
+      "challengeSeed": "0x9608c6a5c046b5d5f06751017006336c16a410a7310dd2dd947d9b921a13b288",
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 3660,
+      "goal": 2500,
+      "canonical": {
+        "constants": {
+          "defaultStrengthMultiplier": 1,
+          "hookCollisionOffset": 13,
+          "hookCollisionRadius": 6,
+          "hookEmptyReturnSpeed": 180,
+          "hookGrabSpeed": 100,
+          "hookMaxAngle": 75,
+          "hookMaxLength": 230,
+          "hookMinAngle": -75,
+          "hookOrigin": {
+            "x": 158,
+            "y": 30
+          },
+          "hookResolveDurationSec": 1,
+          "hookRotateSpeed": 65,
+          "maxDynamiteCount": 12,
+          "maxStrengthMultiplier": 6,
+          "movingEntityIdleDurationSec": 1,
+          "movingEntityPixelsPerSecond": 60,
+          "movingEntityTurnThreshold": 1,
+          "questionBagExtraDynamiteChance": 0.2
+        },
+        "entityConfigs": {
+          "BigGold": {
+            "baseBonus": 500,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15.25,
+            "displaySize": {
+              "height": 29,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigGold",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "BigRock": {
+            "baseBonus": 100,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15,
+            "displaySize": {
+              "height": 28,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigRock",
+            "mass": 10,
+            "moving": null,
+            "randomBag": null
+          },
+          "Bone": {
+            "baseBonus": 7,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.25,
+            "displaySize": {
+              "height": 13,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Bone",
+            "mass": 3,
+            "moving": null,
+            "randomBag": null
+          },
+          "Diamond": {
+            "baseBonus": 600,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Diamond",
+            "mass": 1.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniGold": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 4.5,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniGold",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniRock": {
+            "baseBonus": 11,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6.5,
+            "displaySize": {
+              "height": 11,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniRock",
+            "mass": 5.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "Mole": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "Mole",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "MoleWithDiamond": {
+            "baseBonus": 602,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "MoleWithDiamond",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "NormalGold": {
+            "baseBonus": 100,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 7,
+            "displaySize": {
+              "height": 13,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGold",
+            "mass": 3.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalGoldPlus": {
+            "baseBonus": 250,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 9.5,
+            "displaySize": {
+              "height": 18,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGoldPlus",
+            "mass": 5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalRock": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.25,
+            "displaySize": {
+              "height": 19,
+              "width": 22
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalRock",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "QuestionBag": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.75,
+            "displaySize": {
+              "height": 23,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "random-bag",
+            "id": "QuestionBag",
+            "mass": 1,
+            "moving": null,
+            "randomBag": {
+              "bonusBase": 50,
+              "bonusRatioMax": 16,
+              "bonusRatioMin": 1,
+              "extraEffectChance": 0.2,
+              "massMax": 9,
+              "massMin": 1
+            }
+          },
+          "Skull": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.75,
+            "displaySize": {
+              "height": 17,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Skull",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "TNT": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 14.75,
+            "displaySize": {
+              "height": 33,
+              "width": 26
+            },
+            "explosive": {
+              "explosionRadius": 50
+            },
+            "family": "explosive",
+            "id": "TNT",
+            "mass": 1,
+            "moving": null,
+            "randomBag": null
+          }
+        },
+        "goal": 2500,
+        "levelDefinition": {
+          "entities": [
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 172,
+              "y": 145
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 55,
+              "y": 87
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 235,
+              "y": 111
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 91,
+              "y": 152
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 54,
+              "y": 72
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 79,
+              "y": 79
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 197,
+              "y": 148
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 64,
+              "y": 180
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 257,
+              "y": 98
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 112,
+              "y": 131
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 31,
+              "y": 136
+            },
+            {
+              "dir": null,
+              "type": "NormalGoldPlus",
+              "x": 92,
+              "y": 201
+            },
+            {
+              "dir": null,
+              "type": "NormalGoldPlus",
+              "x": 174,
+              "y": 185
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": -17,
+              "y": 183
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 306,
+              "y": 160
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 218,
+              "y": 192
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 284,
+              "y": 182
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 36,
+              "y": 194
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 253,
+              "y": 207
+            },
+            {
+              "dir": "Right",
+              "type": "Mole",
+              "x": 80,
+              "y": 120
+            },
+            {
+              "dir": "Left",
+              "type": "Mole",
+              "x": 259,
+              "y": 169
+            }
+          ],
+          "group": 5,
+          "id": "L5",
+          "theme": "LevelD"
+        },
+        "logicFps": 60,
+        "simulationVersion": 1,
+        "timeLimitTicks": 3660
+      },
+      "enabled": true
+    },
+    {
+      "boardKind": "campaign",
+      "levelId": "L6",
+      "version": 1,
+      "order": 6,
+      "contentHash": "0xaf656354619df222f4c35d24bf0663f1e042bd1da060ce1089de306cd3eb02be",
+      "challengeSeed": "0xc2428d0f5008698e81ba0c0e58b8baa2c6fae3bbd15aa36b01006f499482194d",
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 3660,
+      "goal": 3200,
+      "canonical": {
+        "constants": {
+          "defaultStrengthMultiplier": 1,
+          "hookCollisionOffset": 13,
+          "hookCollisionRadius": 6,
+          "hookEmptyReturnSpeed": 180,
+          "hookGrabSpeed": 100,
+          "hookMaxAngle": 75,
+          "hookMaxLength": 230,
+          "hookMinAngle": -75,
+          "hookOrigin": {
+            "x": 158,
+            "y": 30
+          },
+          "hookResolveDurationSec": 1,
+          "hookRotateSpeed": 65,
+          "maxDynamiteCount": 12,
+          "maxStrengthMultiplier": 6,
+          "movingEntityIdleDurationSec": 1,
+          "movingEntityPixelsPerSecond": 60,
+          "movingEntityTurnThreshold": 1,
+          "questionBagExtraDynamiteChance": 0.2
+        },
+        "entityConfigs": {
+          "BigGold": {
+            "baseBonus": 500,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15.25,
+            "displaySize": {
+              "height": 29,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigGold",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "BigRock": {
+            "baseBonus": 100,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15,
+            "displaySize": {
+              "height": 28,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigRock",
+            "mass": 10,
+            "moving": null,
+            "randomBag": null
+          },
+          "Bone": {
+            "baseBonus": 7,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.25,
+            "displaySize": {
+              "height": 13,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Bone",
+            "mass": 3,
+            "moving": null,
+            "randomBag": null
+          },
+          "Diamond": {
+            "baseBonus": 600,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Diamond",
+            "mass": 1.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniGold": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 4.5,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniGold",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniRock": {
+            "baseBonus": 11,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6.5,
+            "displaySize": {
+              "height": 11,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniRock",
+            "mass": 5.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "Mole": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "Mole",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "MoleWithDiamond": {
+            "baseBonus": 602,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "MoleWithDiamond",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "NormalGold": {
+            "baseBonus": 100,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 7,
+            "displaySize": {
+              "height": 13,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGold",
+            "mass": 3.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalGoldPlus": {
+            "baseBonus": 250,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 9.5,
+            "displaySize": {
+              "height": 18,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGoldPlus",
+            "mass": 5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalRock": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.25,
+            "displaySize": {
+              "height": 19,
+              "width": 22
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalRock",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "QuestionBag": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.75,
+            "displaySize": {
+              "height": 23,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "random-bag",
+            "id": "QuestionBag",
+            "mass": 1,
+            "moving": null,
+            "randomBag": {
+              "bonusBase": 50,
+              "bonusRatioMax": 16,
+              "bonusRatioMin": 1,
+              "extraEffectChance": 0.2,
+              "massMax": 9,
+              "massMin": 1
+            }
+          },
+          "Skull": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.75,
+            "displaySize": {
+              "height": 17,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Skull",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "TNT": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 14.75,
+            "displaySize": {
+              "height": 33,
+              "width": 26
+            },
+            "explosive": {
+              "explosionRadius": 50
+            },
+            "family": "explosive",
+            "id": "TNT",
+            "mass": 1,
+            "moving": null,
+            "randomBag": null
+          }
+        },
+        "goal": 3200,
+        "levelDefinition": {
+          "entities": [
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 249,
+              "y": 71
+            },
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 200,
+              "y": 92
+            },
+            {
+              "dir": null,
+              "type": "MiniRock",
+              "x": 58,
+              "y": 155
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 51,
+              "y": 81
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 119,
+              "y": 143
+            },
+            {
+              "dir": null,
+              "type": "NormalRock",
+              "x": 176,
+              "y": 213
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 52,
+              "y": 132
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 240,
+              "y": 147
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 250,
+              "y": 155
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 266,
+              "y": 160
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 237,
+              "y": 162
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 95,
+              "y": 166
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 109,
+              "y": 205
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 217,
+              "y": 145
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 39,
+              "y": 209
+            },
+            {
+              "dir": null,
+              "type": "NormalGold",
+              "x": 208,
+              "y": 219
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 301,
+              "y": 189
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 269,
+              "y": 111
+            },
+            {
+              "dir": "Right",
+              "type": "MoleWithDiamond",
+              "x": 30,
+              "y": 112
+            },
+            {
+              "dir": "Left",
+              "type": "MoleWithDiamond",
+              "x": 255,
+              "y": 121
+            },
+            {
+              "dir": "Right",
+              "type": "MoleWithDiamond",
+              "x": 91,
+              "y": 179
+            },
+            {
+              "dir": "Left",
+              "type": "MoleWithDiamond",
+              "x": 234,
+              "y": 194
+            }
+          ],
+          "group": 6,
+          "id": "L6",
+          "theme": "LevelE"
+        },
+        "logicFps": 60,
+        "simulationVersion": 1,
+        "timeLimitTicks": 3660
+      },
+      "enabled": true
+    },
+    {
+      "boardKind": "campaign",
+      "levelId": "L7",
+      "version": 1,
+      "order": 7,
+      "contentHash": "0x2ffd2214777708f20d96ce110d2a33f245abe7aa8ba0c0fd912d08393e64ad77",
+      "challengeSeed": "0x27dc5990de32b9b8007508d28e6346bb338e3d1f200f97afd85eaf6d17fa3a45",
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 3660,
+      "goal": 4050,
+      "canonical": {
+        "constants": {
+          "defaultStrengthMultiplier": 1,
+          "hookCollisionOffset": 13,
+          "hookCollisionRadius": 6,
+          "hookEmptyReturnSpeed": 180,
+          "hookGrabSpeed": 100,
+          "hookMaxAngle": 75,
+          "hookMaxLength": 230,
+          "hookMinAngle": -75,
+          "hookOrigin": {
+            "x": 158,
+            "y": 30
+          },
+          "hookResolveDurationSec": 1,
+          "hookRotateSpeed": 65,
+          "maxDynamiteCount": 12,
+          "maxStrengthMultiplier": 6,
+          "movingEntityIdleDurationSec": 1,
+          "movingEntityPixelsPerSecond": 60,
+          "movingEntityTurnThreshold": 1,
+          "questionBagExtraDynamiteChance": 0.2
+        },
+        "entityConfigs": {
+          "BigGold": {
+            "baseBonus": 500,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15.25,
+            "displaySize": {
+              "height": 29,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigGold",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "BigRock": {
+            "baseBonus": 100,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15,
+            "displaySize": {
+              "height": 28,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigRock",
+            "mass": 10,
+            "moving": null,
+            "randomBag": null
+          },
+          "Bone": {
+            "baseBonus": 7,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.25,
+            "displaySize": {
+              "height": 13,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Bone",
+            "mass": 3,
+            "moving": null,
+            "randomBag": null
+          },
+          "Diamond": {
+            "baseBonus": 600,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Diamond",
+            "mass": 1.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniGold": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 4.5,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniGold",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniRock": {
+            "baseBonus": 11,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6.5,
+            "displaySize": {
+              "height": 11,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniRock",
+            "mass": 5.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "Mole": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "Mole",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "MoleWithDiamond": {
+            "baseBonus": 602,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "MoleWithDiamond",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "NormalGold": {
+            "baseBonus": 100,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 7,
+            "displaySize": {
+              "height": 13,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGold",
+            "mass": 3.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalGoldPlus": {
+            "baseBonus": 250,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 9.5,
+            "displaySize": {
+              "height": 18,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGoldPlus",
+            "mass": 5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalRock": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.25,
+            "displaySize": {
+              "height": 19,
+              "width": 22
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalRock",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "QuestionBag": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.75,
+            "displaySize": {
+              "height": 23,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "random-bag",
+            "id": "QuestionBag",
+            "mass": 1,
+            "moving": null,
+            "randomBag": {
+              "bonusBase": 50,
+              "bonusRatioMax": 16,
+              "bonusRatioMin": 1,
+              "extraEffectChance": 0.2,
+              "massMax": 9,
+              "massMin": 1
+            }
+          },
+          "Skull": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.75,
+            "displaySize": {
+              "height": 17,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Skull",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "TNT": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 14.75,
+            "displaySize": {
+              "height": 33,
+              "width": 26
+            },
+            "explosive": {
+              "explosionRadius": 50
+            },
+            "family": "explosive",
+            "id": "TNT",
+            "mass": 1,
+            "moving": null,
+            "randomBag": null
+          }
+        },
+        "goal": 4050,
+        "levelDefinition": {
+          "entities": [
+            {
+              "dir": null,
+              "type": "Skull",
+              "x": 224,
+              "y": 114
+            },
+            {
+              "dir": null,
+              "type": "Skull",
+              "x": 69,
+              "y": 136
+            },
+            {
+              "dir": null,
+              "type": "Bone",
+              "x": 230,
+              "y": 109
+            },
+            {
+              "dir": null,
+              "type": "Bone",
+              "x": 246,
+              "y": 161
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 125,
+              "y": 171
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 194,
+              "y": 171
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 167,
+              "y": 101
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 39,
+              "y": 108
+            },
+            {
+              "dir": null,
+              "type": "NormalGoldPlus",
+              "x": 16,
+              "y": 73
+            },
+            {
+              "dir": null,
+              "type": "NormalGoldPlus",
+              "x": 289,
+              "y": 91
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 75,
+              "y": 184
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 222,
+              "y": 188
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 149,
+              "y": 203
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 247,
+              "y": 110
+            },
+            {
+              "dir": "Left",
+              "type": "Mole",
+              "x": 104,
+              "y": 86
+            },
+            {
+              "dir": "Right",
+              "type": "Mole",
+              "x": 74,
+              "y": 125
+            },
+            {
+              "dir": "Left",
+              "type": "Mole",
+              "x": 274,
+              "y": 136
+            },
+            {
+              "dir": "Right",
+              "type": "Mole",
+              "x": 17,
+              "y": 164
+            }
+          ],
+          "group": 7,
+          "id": "L7",
+          "theme": "LevelA"
+        },
+        "logicFps": 60,
+        "simulationVersion": 1,
+        "timeLimitTicks": 3660
+      },
+      "enabled": true
+    },
+    {
+      "boardKind": "campaign",
+      "levelId": "L8",
+      "version": 1,
+      "order": 8,
+      "contentHash": "0xe50d06d3de6a0dc8d98409633053b92b9a4658f6049bfc28bcdb0c02b7536d5c",
+      "challengeSeed": "0x3f82b234739bbdf298fdaa0966a1cc69edc70ea12c243d1c85192e60b6b0ae67",
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 3660,
+      "goal": 5000,
+      "canonical": {
+        "constants": {
+          "defaultStrengthMultiplier": 1,
+          "hookCollisionOffset": 13,
+          "hookCollisionRadius": 6,
+          "hookEmptyReturnSpeed": 180,
+          "hookGrabSpeed": 100,
+          "hookMaxAngle": 75,
+          "hookMaxLength": 230,
+          "hookMinAngle": -75,
+          "hookOrigin": {
+            "x": 158,
+            "y": 30
+          },
+          "hookResolveDurationSec": 1,
+          "hookRotateSpeed": 65,
+          "maxDynamiteCount": 12,
+          "maxStrengthMultiplier": 6,
+          "movingEntityIdleDurationSec": 1,
+          "movingEntityPixelsPerSecond": 60,
+          "movingEntityTurnThreshold": 1,
+          "questionBagExtraDynamiteChance": 0.2
+        },
+        "entityConfigs": {
+          "BigGold": {
+            "baseBonus": 500,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15.25,
+            "displaySize": {
+              "height": 29,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigGold",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "BigRock": {
+            "baseBonus": 100,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15,
+            "displaySize": {
+              "height": 28,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigRock",
+            "mass": 10,
+            "moving": null,
+            "randomBag": null
+          },
+          "Bone": {
+            "baseBonus": 7,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.25,
+            "displaySize": {
+              "height": 13,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Bone",
+            "mass": 3,
+            "moving": null,
+            "randomBag": null
+          },
+          "Diamond": {
+            "baseBonus": 600,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Diamond",
+            "mass": 1.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniGold": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 4.5,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniGold",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniRock": {
+            "baseBonus": 11,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6.5,
+            "displaySize": {
+              "height": 11,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniRock",
+            "mass": 5.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "Mole": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "Mole",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "MoleWithDiamond": {
+            "baseBonus": 602,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "MoleWithDiamond",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "NormalGold": {
+            "baseBonus": 100,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 7,
+            "displaySize": {
+              "height": 13,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGold",
+            "mass": 3.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalGoldPlus": {
+            "baseBonus": 250,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 9.5,
+            "displaySize": {
+              "height": 18,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGoldPlus",
+            "mass": 5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalRock": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.25,
+            "displaySize": {
+              "height": 19,
+              "width": 22
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalRock",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "QuestionBag": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.75,
+            "displaySize": {
+              "height": 23,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "random-bag",
+            "id": "QuestionBag",
+            "mass": 1,
+            "moving": null,
+            "randomBag": {
+              "bonusBase": 50,
+              "bonusRatioMax": 16,
+              "bonusRatioMin": 1,
+              "extraEffectChance": 0.2,
+              "massMax": 9,
+              "massMin": 1
+            }
+          },
+          "Skull": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.75,
+            "displaySize": {
+              "height": 17,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Skull",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "TNT": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 14.75,
+            "displaySize": {
+              "height": 33,
+              "width": 26
+            },
+            "explosive": {
+              "explosionRadius": 50
+            },
+            "family": "explosive",
+            "id": "TNT",
+            "mass": 1,
+            "moving": null,
+            "randomBag": null
+          }
+        },
+        "goal": 5000,
+        "levelDefinition": {
+          "entities": [
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 150,
+              "y": 87
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 107,
+              "y": 129
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 191,
+              "y": 128
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 70,
+              "y": 174
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 226,
+              "y": 179
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 296,
+              "y": 169
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 3,
+              "y": 174
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 285,
+              "y": 72
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 59,
+              "y": 85
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 117,
+              "y": 101
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 185,
+              "y": 123
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 232,
+              "y": 143
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 38,
+              "y": 168
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 113,
+              "y": 176
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 188,
+              "y": 202
+            },
+            {
+              "dir": "Right",
+              "type": "MoleWithDiamond",
+              "x": 15,
+              "y": 122
+            },
+            {
+              "dir": "Right",
+              "type": "MoleWithDiamond",
+              "x": 61,
+              "y": 155
+            }
+          ],
+          "group": 8,
+          "id": "L8",
+          "theme": "LevelD"
+        },
+        "logicFps": 60,
+        "simulationVersion": 1,
+        "timeLimitTicks": 3660
+      },
+      "enabled": true
+    },
+    {
+      "boardKind": "campaign",
+      "levelId": "L9",
+      "version": 1,
+      "order": 9,
+      "contentHash": "0xfb46ff031db1d221f5e4568746118c496df68b0670a7f3e948f96291cde62e0f",
+      "challengeSeed": "0xbc9e52abfe5367e50d5472c7d44b2a178af4bb8fafce370cb478e3d132d4ff48",
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 3660,
+      "goal": 6100,
+      "canonical": {
+        "constants": {
+          "defaultStrengthMultiplier": 1,
+          "hookCollisionOffset": 13,
+          "hookCollisionRadius": 6,
+          "hookEmptyReturnSpeed": 180,
+          "hookGrabSpeed": 100,
+          "hookMaxAngle": 75,
+          "hookMaxLength": 230,
+          "hookMinAngle": -75,
+          "hookOrigin": {
+            "x": 158,
+            "y": 30
+          },
+          "hookResolveDurationSec": 1,
+          "hookRotateSpeed": 65,
+          "maxDynamiteCount": 12,
+          "maxStrengthMultiplier": 6,
+          "movingEntityIdleDurationSec": 1,
+          "movingEntityPixelsPerSecond": 60,
+          "movingEntityTurnThreshold": 1,
+          "questionBagExtraDynamiteChance": 0.2
+        },
+        "entityConfigs": {
+          "BigGold": {
+            "baseBonus": 500,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15.25,
+            "displaySize": {
+              "height": 29,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigGold",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "BigRock": {
+            "baseBonus": 100,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15,
+            "displaySize": {
+              "height": 28,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigRock",
+            "mass": 10,
+            "moving": null,
+            "randomBag": null
+          },
+          "Bone": {
+            "baseBonus": 7,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.25,
+            "displaySize": {
+              "height": 13,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Bone",
+            "mass": 3,
+            "moving": null,
+            "randomBag": null
+          },
+          "Diamond": {
+            "baseBonus": 600,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Diamond",
+            "mass": 1.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniGold": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 4.5,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniGold",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniRock": {
+            "baseBonus": 11,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6.5,
+            "displaySize": {
+              "height": 11,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniRock",
+            "mass": 5.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "Mole": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "Mole",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "MoleWithDiamond": {
+            "baseBonus": 602,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "MoleWithDiamond",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "NormalGold": {
+            "baseBonus": 100,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 7,
+            "displaySize": {
+              "height": 13,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGold",
+            "mass": 3.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalGoldPlus": {
+            "baseBonus": 250,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 9.5,
+            "displaySize": {
+              "height": 18,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGoldPlus",
+            "mass": 5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalRock": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.25,
+            "displaySize": {
+              "height": 19,
+              "width": 22
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalRock",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "QuestionBag": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.75,
+            "displaySize": {
+              "height": 23,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "random-bag",
+            "id": "QuestionBag",
+            "mass": 1,
+            "moving": null,
+            "randomBag": {
+              "bonusBase": 50,
+              "bonusRatioMax": 16,
+              "bonusRatioMin": 1,
+              "extraEffectChance": 0.2,
+              "massMax": 9,
+              "massMin": 1
+            }
+          },
+          "Skull": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.75,
+            "displaySize": {
+              "height": 17,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Skull",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "TNT": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 14.75,
+            "displaySize": {
+              "height": 33,
+              "width": 26
+            },
+            "explosive": {
+              "explosionRadius": 50
+            },
+            "family": "explosive",
+            "id": "TNT",
+            "mass": 1,
+            "moving": null,
+            "randomBag": null
+          }
+        },
+        "goal": 6100,
+        "levelDefinition": {
+          "entities": [
+            {
+              "dir": null,
+              "type": "Skull",
+              "x": 164,
+              "y": 189
+            },
+            {
+              "dir": null,
+              "type": "Bone",
+              "x": 277,
+              "y": 194
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 230,
+              "y": 78
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 62,
+              "y": 81
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 112,
+              "y": 147
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 146,
+              "y": 147
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 181,
+              "y": 147
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 6,
+              "y": 205
+            },
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 291,
+              "y": 206
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 58,
+              "y": 66
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 48,
+              "y": 175
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 213,
+              "y": 182
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 2,
+              "y": 113
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 292,
+              "y": 157
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 147,
+              "y": 220
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 219,
+              "y": 98
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 133,
+              "y": 135
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 169,
+              "y": 135
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 34,
+              "y": 151
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 293,
+              "y": 188
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 124,
+              "y": 228
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 178,
+              "y": 228
+            },
+            {
+              "dir": "Left",
+              "type": "MoleWithDiamond",
+              "x": 270,
+              "y": 115
+            },
+            {
+              "dir": "Right",
+              "type": "MoleWithDiamond",
+              "x": 36,
+              "y": 120
+            },
+            {
+              "dir": "Left",
+              "type": "MoleWithDiamond",
+              "x": 223,
+              "y": 152
+            },
+            {
+              "dir": "Right",
+              "type": "MoleWithDiamond",
+              "x": 86,
+              "y": 161
+            }
+          ],
+          "group": 9,
+          "id": "L9",
+          "theme": "LevelB"
+        },
+        "logicFps": 60,
+        "simulationVersion": 1,
+        "timeLimitTicks": 3660
+      },
+      "enabled": true
+    },
+    {
+      "boardKind": "campaign",
+      "levelId": "L10",
+      "version": 1,
+      "order": 10,
+      "contentHash": "0xd3657879e7eb70f3497d34f9158e9fe369521946cd4e86faa2f891aee0ed2899",
+      "challengeSeed": "0x4692a590b0270c249d33099a38411c76054d1fa1cd1d91d10a80e62c93d270bc",
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 3660,
+      "goal": 7400,
+      "canonical": {
+        "constants": {
+          "defaultStrengthMultiplier": 1,
+          "hookCollisionOffset": 13,
+          "hookCollisionRadius": 6,
+          "hookEmptyReturnSpeed": 180,
+          "hookGrabSpeed": 100,
+          "hookMaxAngle": 75,
+          "hookMaxLength": 230,
+          "hookMinAngle": -75,
+          "hookOrigin": {
+            "x": 158,
+            "y": 30
+          },
+          "hookResolveDurationSec": 1,
+          "hookRotateSpeed": 65,
+          "maxDynamiteCount": 12,
+          "maxStrengthMultiplier": 6,
+          "movingEntityIdleDurationSec": 1,
+          "movingEntityPixelsPerSecond": 60,
+          "movingEntityTurnThreshold": 1,
+          "questionBagExtraDynamiteChance": 0.2
+        },
+        "entityConfigs": {
+          "BigGold": {
+            "baseBonus": 500,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15.25,
+            "displaySize": {
+              "height": 29,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigGold",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "BigRock": {
+            "baseBonus": 100,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 15,
+            "displaySize": {
+              "height": 28,
+              "width": 32
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "BigRock",
+            "mass": 10,
+            "moving": null,
+            "randomBag": null
+          },
+          "Bone": {
+            "baseBonus": 7,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.25,
+            "displaySize": {
+              "height": 13,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Bone",
+            "mass": 3,
+            "moving": null,
+            "randomBag": null
+          },
+          "Diamond": {
+            "baseBonus": 600,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Diamond",
+            "mass": 1.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniGold": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 4.5,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniGold",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "MiniRock": {
+            "baseBonus": 11,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6.5,
+            "displaySize": {
+              "height": 11,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "MiniRock",
+            "mass": 5.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "Mole": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "Mole",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "MoleWithDiamond": {
+            "baseBonus": 602,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.5
+            },
+            "collisionRadius": 7.75,
+            "displaySize": {
+              "height": 13,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "moving",
+            "id": "MoleWithDiamond",
+            "mass": 1.5,
+            "moving": {
+              "moveRange": 135,
+              "speed": 1
+            },
+            "randomBag": null
+          },
+          "NormalGold": {
+            "baseBonus": 100,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 7,
+            "displaySize": {
+              "height": 13,
+              "width": 15
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGold",
+            "mass": 3.5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalGoldPlus": {
+            "baseBonus": 250,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 9.5,
+            "displaySize": {
+              "height": 18,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalGoldPlus",
+            "mass": 5,
+            "moving": null,
+            "randomBag": null
+          },
+          "NormalRock": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.25,
+            "displaySize": {
+              "height": 19,
+              "width": 22
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "NormalRock",
+            "mass": 7,
+            "moving": null,
+            "randomBag": null
+          },
+          "QuestionBag": {
+            "baseBonus": 50,
+            "bonusTier": "normal",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 10.75,
+            "displaySize": {
+              "height": 23,
+              "width": 20
+            },
+            "explosive": null,
+            "family": "random-bag",
+            "id": "QuestionBag",
+            "mass": 1,
+            "moving": null,
+            "randomBag": {
+              "bonusBase": 50,
+              "bonusRatioMax": 16,
+              "bonusRatioMin": 1,
+              "extraEffectChance": 0.2,
+              "massMax": 9,
+              "massMin": 1
+            }
+          },
+          "Skull": {
+            "baseBonus": 20,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 8.75,
+            "displaySize": {
+              "height": 17,
+              "width": 18
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Skull",
+            "mass": 2,
+            "moving": null,
+            "randomBag": null
+          },
+          "TNT": {
+            "baseBonus": 2,
+            "bonusTier": "low",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 14.75,
+            "displaySize": {
+              "height": 33,
+              "width": 26
+            },
+            "explosive": {
+              "explosionRadius": 50
+            },
+            "family": "explosive",
+            "id": "TNT",
+            "mass": 1,
+            "moving": null,
+            "randomBag": null
+          }
+        },
+        "goal": 7400,
+        "levelDefinition": {
+          "entities": [
+            {
+              "dir": null,
+              "type": "TNT",
+              "x": 146,
+              "y": 135
+            },
+            {
+              "dir": null,
+              "type": "MiniGold",
+              "x": 64,
+              "y": 103
+            },
+            {
+              "dir": null,
+              "type": "QuestionBag",
+              "x": 147,
+              "y": 215
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 48,
+              "y": 175
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 213,
+              "y": 182
+            },
+            {
+              "dir": null,
+              "type": "BigGold",
+              "x": 146,
+              "y": 210
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 285,
+              "y": 72
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 59,
+              "y": 85
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 117,
+              "y": 101
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 185,
+              "y": 123
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 232,
+              "y": 143
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 38,
+              "y": 168
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 113,
+              "y": 176
+            },
+            {
+              "dir": null,
+              "type": "Diamond",
+              "x": 188,
+              "y": 202
+            },
+            {
+              "dir": null,
+              "type": "NormalGoldPlus",
+              "x": 274,
+              "y": 102
+            },
+            {
+              "dir": null,
+              "type": "NormalGoldPlus",
+              "x": 91,
+              "y": 168
+            },
+            {
+              "dir": "Right",
+              "type": "MoleWithDiamond",
+              "x": 35,
+              "y": 118
+            },
+            {
+              "dir": "Right",
+              "type": "MoleWithDiamond",
+              "x": 199,
+              "y": 152
+            },
+            {
+              "dir": "Left",
+              "type": "MoleWithDiamond",
+              "x": 219,
+              "y": 182
+            },
+            {
+              "dir": "Left",
+              "type": "MoleWithDiamond",
+              "x": 290,
+              "y": 203
+            },
+            {
+              "dir": "Right",
+              "type": "MoleWithDiamond",
+              "x": 29,
+              "y": 207
+            }
+          ],
+          "group": 10,
+          "id": "L10",
+          "theme": "LevelD"
+        },
+        "logicFps": 60,
+        "simulationVersion": 1,
+        "timeLimitTicks": 3660
+      },
+      "enabled": true
+    }
+  ]
+}

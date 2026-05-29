@@ -1,0 +1,127 @@
+{
+  "basePath": "assets",
+  "images": {
+    "backgrounds": {
+      "menu": "images/backgrounds/bg_start_menu.png",
+      "goal": "images/backgrounds/bg_goal.png",
+      "shop": "images/backgrounds/bg_shop.png",
+      "levelCommonTop": "images/backgrounds/bg_top.png",
+      "levelA": "images/backgrounds/bg_level_A.png",
+      "levelB": "images/backgrounds/bg_level_B.png",
+      "levelC": "images/backgrounds/bg_level_C.png",
+      "levelD": "images/backgrounds/bg_level_D.png",
+      "levelE": "images/backgrounds/bg_level_E.png"
+    },
+    "entities": {
+      "miniGold": "images/entities/gold_mini.png",
+      "normalGold": "images/entities/gold_normal.png",
+      "normalGoldPlus": "images/entities/gold_normal_plus.png",
+      "bigGold": "images/entities/gold_big.png",
+      "miniRock": "images/entities/rock_mini.png",
+      "normalRock": "images/entities/rock_normal.png",
+      "bigRock": "images/entities/rock_big.png",
+      "questionBag": "images/entities/question_bag.png",
+      "diamond": "images/entities/diamond.png",
+      "skull": "images/entities/skull.png",
+      "bone": "images/entities/bone.png",
+      "tnt": "images/entities/tnt.png",
+      "tntDestroyed": "images/entities/tnt_destroyed.png"
+    },
+    "characters": {
+      "minerSheet": "images/characters/miner_sheet.png",
+      "shopkeeperSheet": "images/characters/shopkeeper_sheet.png",
+      "moleSheet": "images/characters/mole_sheet.png",
+      "moleWithDiamondSheet": "images/characters/mole_with_diamond_sheet.png"
+    },
+    "tools": {
+      "hookSheet": "images/tools/hook_sheet.png"
+    },
+    "items": {
+      "dynamite": "images/items/dynamite.png",
+      "strengthDrink": "images/items/strength_drink.png",
+      "luckyClover": "images/items/lucky_clover.png",
+      "rockCollectorsBook": "images/items/rock_collectors_book.png",
+      "gemPolish": "images/items/gem_polish.png"
+    },
+    "ui": {
+      "title": "images/ui/text_goldminer.png",
+      "menuArrow": "images/ui/menu_arrow.png",
+      "panel": "images/ui/panel.png",
+      "dialogueBubble": "images/ui/ui_dialogue_bubble.png",
+      "selector": "images/ui/ui_selector.png",
+      "dynamiteUi": "images/ui/ui_dynamite.png",
+      "strengthLabel": "images/ui/text_strength.png"
+    },
+    "fx": {
+      "goldBigFxSheet": "images/fx/gold_big_fx_sheet.png",
+      "explosiveFxSheet": "images/fx/explosive_fx_sheet.png",
+      "biggerExplosiveFxSheet": "images/fx/bigger_explosive_fx_sheet.png"
+    },
+    "icons": {
+      "appIcon": "images/icons/icon.png"
+    }
+  },
+  "audio": {
+    "sfx": {
+      "money": "audio/sfx/money.wav",
+      "hookReset": "audio/sfx/hook_reset.wav",
+      "grabStart": "audio/sfx/grab_start.mp3",
+      "grabBack": "audio/sfx/grab_back.wav",
+      "explosive": "audio/sfx/explosive.wav",
+      "highValue": "audio/sfx/high_value.wav",
+      "normalValue": "audio/sfx/normal_value.wav",
+      "lowValue": "audio/sfx/low_value.wav"
+    },
+    "music": {
+      "goal": "audio/music/goal.mp3",
+      "madeGoal": "audio/music/made_goal.mp3"
+    }
+  },
+  "fonts": {
+    "pixelSquare": "fonts/Pixel-Square-10-1.ttf",
+    "kurland": "fonts/Kurland.ttf",
+    "visitor": "fonts/visitor1.ttf"
+  },
+  "spriteSheets": {
+    "miner": {
+      "path": "images/characters/miner_sheet.png",
+      "frameWidth": 32,
+      "frameHeight": 40
+    },
+    "shopkeeper": {
+      "path": "images/characters/shopkeeper_sheet.png",
+      "frameWidth": 80,
+      "frameHeight": 80
+    },
+    "hook": {
+      "path": "images/tools/hook_sheet.png",
+      "frameWidth": 13,
+      "frameHeight": 15
+    },
+    "mole": {
+      "path": "images/characters/mole_sheet.png",
+      "frameWidth": 18,
+      "frameHeight": 13
+    },
+    "moleWithDiamond": {
+      "path": "images/characters/mole_with_diamond_sheet.png",
+      "frameWidth": 18,
+      "frameHeight": 13
+    },
+    "goldBigFx": {
+      "path": "images/fx/gold_big_fx_sheet.png",
+      "frameWidth": 54,
+      "frameHeight": 54
+    },
+    "explosiveFx": {
+      "path": "images/fx/explosive_fx_sheet.png",
+      "frameWidth": 64,
+      "frameHeight": 64
+    },
+    "biggerExplosiveFx": {
+      "path": "images/fx/bigger_explosive_fx_sheet.png",
+      "frameWidth": 100,
+      "frameHeight": 100
+    }
+  }
+}

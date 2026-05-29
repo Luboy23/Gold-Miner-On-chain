@@ -1,0 +1,126 @@
+{
+  "name": "question-bag-single-catch",
+  "spec": {
+    "levelId": "L1",
+    "version": 1,
+    "order": 1,
+    "contentHash": "0x0101010101010101010101010101010101010101010101010101010101010101",
+    "challengeSeed": "0x0202020202020202020202020202020202020202020202020202020202020202",
+    "simulationVersion": 1,
+    "logicFps": 60,
+    "timeLimitTicks": 420,
+    "goal": 300,
+    "canonical": {
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 420,
+      "goal": 300,
+      "constants": {
+        "hookOrigin": {
+          "x": 158,
+          "y": 30
+        },
+        "hookCollisionOffset": 13,
+        "hookMinAngle": -75,
+        "hookMaxAngle": 75,
+        "hookRotateSpeed": 65,
+        "hookMaxLength": 230,
+        "hookGrabSpeed": 100,
+        "hookEmptyReturnSpeed": 180,
+        "hookCollisionRadius": 6,
+        "hookResolveDurationSec": 1,
+        "questionBagExtraDynamiteChance": 0.2,
+        "maxDynamiteCount": 12,
+        "defaultStrengthMultiplier": 1,
+        "maxStrengthMultiplier": 6,
+        "movingEntityIdleDurationSec": 1,
+        "movingEntityPixelsPerSecond": 60,
+        "movingEntityTurnThreshold": 1
+      },
+      "entityConfigs": {
+        "QuestionBag": {
+          "id": "QuestionBag",
+          "family": "random-bag",
+          "mass": 1,
+          "baseBonus": 50,
+          "bonusTier": "normal",
+          "collisionRadius": 8,
+          "catchAnchor": {
+            "xRatio": 0.5,
+            "yRatio": 0.3333333333333333
+          },
+          "displaySize": {
+            "width": 20,
+            "height": 20
+          },
+          "randomBag": {
+            "massMin": 1,
+            "massMax": 9,
+            "bonusBase": 50,
+            "bonusRatioMin": 1,
+            "bonusRatioMax": 16,
+            "extraEffectChance": 0.2
+          },
+          "moving": null,
+          "explosive": null
+        }
+      },
+      "levelDefinition": {
+        "id": "L1",
+        "group": 1,
+        "theme": "LevelB",
+        "entities": [
+          {
+            "type": "QuestionBag",
+            "x": 150,
+            "y": 80,
+            "dir": null
+          }
+        ]
+      }
+    }
+  },
+  "evidence": {
+    "protocolVersion": 2,
+    "simulationVersion": 1,
+    "sessionId": "0x0303030303030303030303030303030303030303030303030303030303030303",
+    "seasonId": 1,
+    "levelId": "L1",
+    "levelVersion": 1,
+    "levelContentHash": "0x0101010101010101010101010101010101010101010101010101010101010101",
+    "challengeSeed": "0x0202020202020202020202020202020202020202020202020202020202020202",
+    "clientBuildHash": "0x0404040404040404040404040404040404040404040404040404040404040404",
+    "logicFps": 60,
+    "finishedTick": 420,
+    "actions": [
+      {
+        "kind": "fireHook",
+        "tick": 59
+      }
+    ],
+    "summary": {
+      "score": 300,
+      "dynamiteUsed": 0,
+      "caughtCount": 1,
+      "cleared": true
+    }
+  },
+  "expected": {
+    "score": 300,
+    "dynamiteUsed": 0,
+    "caughtCount": 1,
+    "cleared": true,
+    "finishedTick": 420,
+    "durationMs": 7000,
+    "questionBags": [
+      {
+        "index": 0,
+        "mass": 9,
+        "bonus": 300,
+        "rewardKind": "money",
+        "dynamiteDelta": 0,
+        "grantsStrengthBoost": false
+      }
+    ]
+  }
+}

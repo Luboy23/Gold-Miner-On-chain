@@ -1,0 +1,112 @@
+[
+  {
+    "boardKind": "campaign",
+    "levelId": "L1",
+    "version": 1,
+    "order": 1,
+    "contentHash": "0xf5cfc520eed61fb19b5de63ab0eaac12f2e266c51408ab3f51a2af0f9a439f25",
+    "challengeSeed": "0x34b657fc0d198deb25dd8bc896cfb53ff467f4243b0e05b6bc0720c58fd63ba7",
+    "enabled": true,
+    "isCurrent": false
+  },
+  {
+    "boardKind": "campaign",
+    "levelId": "L2",
+    "version": 1,
+    "order": 2,
+    "contentHash": "0x8cba8abc63f9c849022354f60d11359036800c36b87f0b95fa935048127b2844",
+    "challengeSeed": "0x4978f20adf7f3d009c3ca299d5bed2b5054513b5e3d91e02f953fb3b9f8479ab",
+    "enabled": true,
+    "isCurrent": false
+  },
+  {
+    "boardKind": "campaign",
+    "levelId": "L3",
+    "version": 1,
+    "order": 3,
+    "contentHash": "0xc51ce96d1dc4a9f55d7e329eac4f3e45a4c7ca4f625ed04d96b892d842e9b590",
+    "challengeSeed": "0x57c6106610581763a0a0ac2c70acf74190b5c7bcc0ff9be6c20cc3d47dc4046e",
+    "enabled": true,
+    "isCurrent": false
+  },
+  {
+    "boardKind": "campaign",
+    "levelId": "L4",
+    "version": 1,
+    "order": 4,
+    "contentHash": "0xd1a7a08c482cb982d57cc4b4bceec18dc3835abc3f36cbbe51e2dc3ea212da7e",
+    "challengeSeed": "0x4a7b788f4148205985329b6ab745940fc6772ce24e8c243af6dbaea8ebfbb365",
+    "enabled": true,
+    "isCurrent": false
+  },
+  {
+    "boardKind": "campaign",
+    "levelId": "L5",
+    "version": 1,
+    "order": 5,
+    "contentHash": "0xc02b8392ea39d622970cef2cb2de834a28e577e31cfce747a0106e3f8fafea85",
+    "challengeSeed": "0x9608c6a5c046b5d5f06751017006336c16a410a7310dd2dd947d9b921a13b288",
+    "enabled": true,
+    "isCurrent": false
+  },
+  {
+    "boardKind": "campaign",
+    "levelId": "L6",
+    "version": 1,
+    "order": 6,
+    "contentHash": "0xaf656354619df222f4c35d24bf0663f1e042bd1da060ce1089de306cd3eb02be",
+    "challengeSeed": "0xc2428d0f5008698e81ba0c0e58b8baa2c6fae3bbd15aa36b01006f499482194d",
+    "enabled": true,
+    "isCurrent": false
+  },
+  {
+    "boardKind": "campaign",
+    "levelId": "L7",
+    "version": 1,
+    "order": 7,
+    "contentHash": "0x2ffd2214777708f20d96ce110d2a33f245abe7aa8ba0c0fd912d08393e64ad77",
+    "challengeSeed": "0x27dc5990de32b9b8007508d28e6346bb338e3d1f200f97afd85eaf6d17fa3a45",
+    "enabled": true,
+    "isCurrent": false
+  },
+  {
+    "boardKind": "campaign",
+    "levelId": "L8",
+    "version": 1,
+    "order": 8,
+    "contentHash": "0xe50d06d3de6a0dc8d98409633053b92b9a4658f6049bfc28bcdb0c02b7536d5c",
+    "challengeSeed": "0x3f82b234739bbdf298fdaa0966a1cc69edc70ea12c243d1c85192e60b6b0ae67",
+    "enabled": true,
+    "isCurrent": false
+  },
+  {
+    "boardKind": "campaign",
+    "levelId": "L9",
+    "version": 1,
+    "order": 9,
+    "contentHash": "0xfb46ff031db1d221f5e4568746118c496df68b0670a7f3e948f96291cde62e0f",
+    "challengeSeed": "0xbc9e52abfe5367e50d5472c7d44b2a178af4bb8fafce370cb478e3d132d4ff48",
+    "enabled": true,
+    "isCurrent": false
+  },
+  {
+    "boardKind": "campaign",
+    "levelId": "L10",
+    "version": 1,
+    "order": 10,
+    "contentHash": "0xd3657879e7eb70f3497d34f9158e9fe369521946cd4e86faa2f891aee0ed2899",
+    "challengeSeed": "0x4692a590b0270c249d33099a38411c76054d1fa1cd1d91d10a80e62c93d270bc",
+    "enabled": true,
+    "isCurrent": false
+  },
+  {
+    "boardKind": "ranked",
+    "levelId": "diamond_rush_60",
+    "version": 1,
+    "order": 1,
+    "contentHash": "0xe7d521dc6cb84b4e36bfed3e7efbe6a7a23e580791555cf1f8b72fe28635d424",
+    "challengeSeed": "0xf5887cca5abd7f768e0448f4e07527a74b5e39203c38299225c386cf1236dc82",
+    "enabled": true,
+    "isCurrent": true
+  }
+]

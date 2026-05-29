@@ -1,0 +1,131 @@
+{
+  "version": 3,
+  "generatedAt": "2026-05-28T13:01:48.960Z",
+  "boardId": "diamond_rush_60",
+  "simulationVersion": 1,
+  "logicFps": 60,
+  "challenges": [
+    {
+      "boardKind": "ranked",
+      "levelId": "diamond_rush_60",
+      "version": 1,
+      "order": 1,
+      "contentHash": "0xe7d521dc6cb84b4e36bfed3e7efbe6a7a23e580791555cf1f8b72fe28635d424",
+      "challengeSeed": "0xf5887cca5abd7f768e0448f4e07527a74b5e39203c38299225c386cf1236dc82",
+      "simulationVersion": 1,
+      "logicFps": 60,
+      "timeLimitTicks": 3600,
+      "canonical": {
+        "boardKind": "ranked",
+        "challengeId": "diamond_rush_60",
+        "challengeVersion": 1,
+        "constants": {
+          "defaultStrengthMultiplier": 1,
+          "hookCollisionOffset": 13,
+          "hookCollisionRadius": 6,
+          "hookEmptyReturnSpeed": 180,
+          "hookGrabSpeed": 100,
+          "hookMaxAngle": 75,
+          "hookMaxLength": 230,
+          "hookMinAngle": -75,
+          "hookOrigin": {
+            "x": 158,
+            "y": 30
+          },
+          "hookResolveDurationSec": 1,
+          "hookRotateSpeed": 65,
+          "maxDynamiteCount": 12,
+          "maxStrengthMultiplier": 6,
+          "movingEntityIdleDurationSec": 1,
+          "movingEntityPixelsPerSecond": 60,
+          "movingEntityTurnThreshold": 1,
+          "questionBagExtraDynamiteChance": 0.2
+        },
+        "entityConfigs": {
+          "Diamond": {
+            "baseBonus": 600,
+            "bonusTier": "high",
+            "catchAnchor": {
+              "xRatio": 0.5,
+              "yRatio": 0.3333333333333333
+            },
+            "collisionRadius": 6,
+            "displaySize": {
+              "height": 8,
+              "width": 10
+            },
+            "explosive": null,
+            "family": "static",
+            "id": "Diamond",
+            "mass": 1.5,
+            "moving": null,
+            "randomBag": null
+          }
+        },
+        "logicFps": 60,
+        "simulationVersion": 1,
+        "spawnPoints": [
+          {
+            "x": 56,
+            "y": 72
+          },
+          {
+            "x": 106,
+            "y": 86
+          },
+          {
+            "x": 214,
+            "y": 78
+          },
+          {
+            "x": 276,
+            "y": 96
+          },
+          {
+            "x": 74,
+            "y": 120
+          },
+          {
+            "x": 160,
+            "y": 112
+          },
+          {
+            "x": 244,
+            "y": 128
+          },
+          {
+            "x": 108,
+            "y": 156
+          },
+          {
+            "x": 206,
+            "y": 164
+          },
+          {
+            "x": 58,
+            "y": 186
+          },
+          {
+            "x": 156,
+            "y": 198
+          },
+          {
+            "x": 268,
+            "y": 208
+          }
+        ],
+        "spawnPolicy": {
+          "allowDynamiteAction": false,
+          "allowItems": false,
+          "cycleSize": 12,
+          "entityType": "Diamond",
+          "shuffleAlgorithm": "seeded-cycle-no-repeat"
+        },
+        "theme": "LevelD",
+        "timeLimitTicks": 3600
+      },
+      "enabled": true,
+      "isCurrent": true
+    }
+  ]
+}
